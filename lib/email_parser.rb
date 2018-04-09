@@ -12,8 +12,7 @@ class EmailParser
 
 def parse
   # binding.pry
-  parsed = emails.split(" ")
-  parsed.map do |email|
+  emails.split.map do |email|
     email.gsub(",","")
   end.uniq
 end
